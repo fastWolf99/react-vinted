@@ -8,10 +8,10 @@ const Home = ({ title, pricesRange }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let filters = `?priceMin=${pricesRange[0]}&priceMax=${pricesRange[1]}`;
+      let filters = `?priceMin=${pricesRange[0]}&priceMax=${pricesRange[1]}&`;
 
       if (title) {
-        filters = `?title=${title}`;
+        filters += `title=${title}`;
       }
 
       try {
