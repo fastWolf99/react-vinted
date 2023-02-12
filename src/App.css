@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* HEADER  */
+header {
+  height: 80px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-thumb {
+  position: absolute;
+  background-color: #00b4d8;
+  color: white;
+  border-radius: 2px;
+  bottom: 20px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* HOME PAGE */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.offer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+.offer > img {
+  width: 240px;
+  height: 360px;
+  object-fit: cover;
+}
+.offer > div {
+  padding: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.offer > div > img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/* OFFER PAGE */
+main {
+  display: flex;
+}
+.details-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SIGNUP PAGE */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+/* PUBLISH PAGE */
+.publish-error {
+  color: red;
+}
+
+/* PAYMENT PAGE */
+.payment-page {
+  background-color: lightgrey;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.payment-bloc {
+  background-color: white;
+  width: 800px;
+  height: 500px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment-bloc > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 50px;
+}
+.payment-bloc form {
+  margin: 40px 50px;
+  width: calc(100% - 100px);
 }
